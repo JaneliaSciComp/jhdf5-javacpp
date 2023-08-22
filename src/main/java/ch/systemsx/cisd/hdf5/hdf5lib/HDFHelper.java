@@ -32,8 +32,6 @@ import static hdf.hdf5lib.HDF5Constants.H5P_DEFAULT;
 import static hdf.hdf5lib.HDF5Constants.H5_INDEX_NAME;
 import static hdf.hdf5lib.HDF5Constants.H5_ITER_INC;
 
-import com.sun.xml.internal.bind.v2.runtime.Name;
-
 import hdf.hdf5lib.H5;
 import hdf.hdf5lib.HDF5Constants;
 import hdf.hdf5lib.HDFNativeData;
@@ -101,7 +99,7 @@ public class HDFHelper
             }
         }
 
-        return new H5O_info_t(-1, -1, -1, -1, -1, -1, -1, -1, -1, null, null, null);
+        return new H5O_info_t(-1, HDF5Constants.H5O_TOKEN_UNDEF, -1, -1, -1, -1, -1, -1, -1);
     }
 
     /**
